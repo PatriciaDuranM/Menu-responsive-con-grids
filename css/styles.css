@@ -39,10 +39,29 @@ body{
     padding-inline: 24px;
 }
 
+@media screen and (width>786px) {
+    .header{
+        background-image: url(../assets/images/desktop/header.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 800px;
+        padding-top: 34px;
+        padding-inline: 48px;
+        background-color: #458D7E;
+    }
+}
+
 .menulogo{
     display: flex;
     justify-content: space-between;
     margin-bottom: 46px;
+}
+
+@media screen and (width>786px) {
+.burgericon{
+    display: none;
+}
 }
 
 .nav{
@@ -55,8 +74,36 @@ body{
    padding-bottom: 40px;
 }
 
+@media screen and (width>786px) {
+    .nav{
+        display: flex;
+        height: 56px;
+        width: 467px;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        gap: 47px;
+        background-color: transparent;
+        top: 34px;
+        right: 48px;
+    }
+}
+
 .h1{
-text-align: center;
+    text-align: center;
+    font-family: "Fraunces";
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+@media screen and (width>786px) {
+    .h1{
+        margin-top: 105px;
+        font-size: 56px;
+    }
 }
 
 .arrow{
@@ -64,6 +111,12 @@ text-align: center;
     width: 30px;
     height: 108px;
     margin-top: 52px;
+}
+
+@media screen and (width>786px) {
+    .arrow{
+        margin-top: 97px;
+    }
 }
 
 .menuoption{
@@ -75,10 +128,22 @@ text-align: center;
  padding-bottom: 32px;
 }
 
+@media screen and (width>786px) {
+    .menuoption{
+        font-family: "Barlow", sans-serif;
+        color: #808397;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 24px;
+        color: white;
+       }
+}
+
 .contactbutton{
 margin-inline:auto;
 font-family: "Fraunces";
-padding-top: 16px;
+padding-top: 17px;
 padding-bottom: 16px;
 padding-inline: 30px;
 width: 140px;
@@ -88,13 +153,14 @@ border-radius: 28px;
 color: #24303E;
 text-align: center;
 font-weight: 700;
+font-size: 15px;
 }
 
-.h1{
-    font-family: "Fraunces";
-    color: white;
-    font-size: 40px;
-    font-weight: 900;
+@media screen and (width>786px) {
+    .contactbutton{
+        background-color: white;
+        color: #24303E;
+       }
 }
 
 .hide{
@@ -105,9 +171,23 @@ font-weight: 700;
     width: 375px;
 }
 
+@media screen and (width>786px) {
+    .main{
+       width: 100%;
+    }
+}
+
 .grid{
     display: grid;
     grid-template-columns: 375px;
+}
+
+@media screen and (width>786px) {
+    .grid{
+       width: 100%;
+       grid-template-columns: repeat(2, 720px);
+       grid-template-rows: repeat(3, 600px);
+    }
 }
 
 .box1{  
@@ -115,6 +195,18 @@ font-weight: 700;
     background-image:url(../assets/images/mobile/egg-mobile.jpg);
     background-size: contain;
 }
+
+@media screen and (width>786px) {
+    .box1{
+        background-image:url(../assets/images/desktop/egg.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        grid-column: 2/3;
+    }
+}
+
+
 .boxtext{
     padding-inline: 24px;
     padding-top: 64px;
@@ -122,11 +214,29 @@ font-weight: 700;
     text-align: center;
 }
 
+@media screen and (width>786px) {
+    .box2{
+        height: 600px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-left: 165px;
+        padding-right: 110px;
+        padding-top: 158px;
+        text-align: start;
+    }
+}
+
 .imgtitle{
     font-family: "Fraunces";
     font-weight: 900;
     color: #24303E;
     font-size: 32px;
+}
+
+@media screen and (width>786px) {
+    .imgtitle{
+        font-size: 40px;
+    }
 }
 
 .text{
@@ -137,16 +247,45 @@ font-weight: 700;
     font-size: 18px;
     text-align: center;
 }
+
+@media screen and (width>786px) {
+    .text{
+        text-align: start;
+    }
+}
 .learnmore{
     font-family: 'Fraunces';
     font-weight: 900;
     font-size: 15px;
     color: #24303E;
+    text-decoration: solid;
+    text-decoration-color: #FBD600;
 }
 .box3{
     height: 312px;
     background-image:url(../assets/images/mobile/cup-mobile.jpg);
     background-size: contain;
+}
+
+@media screen and (width>786px) {
+    .box3{
+        height: 600px;
+        grid-column: 1/2;
+        background-image:url(../assets/images/desktop/cup.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (width>786px) {
+    .box4{
+        height: 600px;
+        grid-column: 2/3;
+        padding-left: 110px;
+        padding-top: 158px;
+        padding-right: 165px;
+        text-align: start;
+    }
 }
 
 .box5{
@@ -157,10 +296,24 @@ font-weight: 700;
     padding-inline: 24px;
     text-align: center;
 }
+
+@media screen and (width>786px) {
+    .box5{
+    
+    background-image: url(../assets/images/desktop/cherries.jpg);
+    background-size: contain;
+    padding-top: 398px;
+    padding-inline: 190px;
+    text-align: center;
+    }
+}
+
 .title5{
     font-size: 28px;
     color: #24554A;
 }
+
+
 .greentext{
     color: #24554A;
     font-size: 16px;
@@ -176,10 +329,22 @@ font-weight: 700;
     padding-inline: 24px;
     text-align: center;
 }
+
+@media screen and (width>786px) {
+    .box6{
+    background-image: url(../assets/images/desktop/orange.jpg);
+    background-size: contain;
+    padding-top: 398px;
+    padding-inline: 190px;
+    text-align: center;
+    }
+}
+
 .title6{
     font-size: 28px;
     color: #052C3B;
 }
+
 .bluetext{
     color: #052C3B;
     font-size: 16px;
@@ -187,12 +352,22 @@ font-weight: 700;
     line-height: 27px;
     letter-spacing: 0.11px;
 }
+
 .reviews{
     display: flex;
     flex-direction: column;
     padding-inline: 24px;
     padding-top: 64px;
     padding-bottom: 86px;
+}
+
+@media screen and (width>786px) {
+    .reviews{
+        width: 100%;
+        padding-top: 160px;
+        padding-inline: 165px;
+        padding-bottom: 160px;
+    }
 }
 
 .imgprofile{
@@ -216,6 +391,15 @@ font-weight: 700;
     gap: 64px;
 }
 
+@media screen and (width>786px) {
+    .reviews-container{
+        display: flex;
+        flex-direction: row;
+        margin-inline:auto;
+        gap: 30px;
+    }
+}
+
 .review{
     display: flex;
     flex-direction: column;
@@ -224,12 +408,20 @@ font-weight: 700;
     text-align: center;
     width: 327px;
 }
+
+@media screen and (width>786px) {
+    .review{
+        width: 350px;
+    }
+}
+
 .reviewstext{
     font-family: 'Barlow';
     font-size: 18px;
     font-weight: 600;
     color: #5B636D;
     margin-bottom: 0px;
+    line-height: 32px;
 }
 
 .name{
@@ -239,6 +431,7 @@ color: #24303E;
 font-weight: 900;
 margin-bottom: 0px;
 }
+
 .ocupation{
     margin-top: 9px;
     font-family: 'Barlow';
@@ -253,21 +446,61 @@ margin-bottom: 0px;
     grid-template-rows: repeat(2,188px);
 }
 
+@media screen and (width>786px) {
+    .lastphotos{
+        grid-template-columns: repeat(4,360px);
+        grid-template-rows:  447px;
+    }
+    
+}
+
 .photo1{
     background-image: url(../assets/images/mobile/milkbottles-mobile.jpg);
     background-size: contain;
 }
+
+@media screen and (width>786px) {
+    .photo1{
+        background-image: url(../assets/images/desktop/milkbottles.jpg);
+    }
+    
+}
+
 .photo2{
     background-image: url(../assets/images/mobile/orangeplate-mobile.jpg);
     background-size: contain;
 }
+
+@media screen and (width>786px) {
+    .photo2{
+        background-image: url(../assets/images/desktop/orangeplate.jpg);
+    }
+    
+}
+
 .photo3{
     background-image: url(../assets/images/mobile/cone-mobile.jpg);
     background-size: contain;
-}.photo4{
+}
+
+@media screen and (width>786px) {
+    .photo3{
+        background-image: url(../assets/images/desktop/cone.jpg);
+    }
+    
+}
+
+.photo4{
     background-image: url(../assets/images/mobile/sugar-cubes-mobile.jpg);
     background-size: contain;
 }
+
+@media screen and (width>786px) {
+    .photo4{
+        background-image: url(../assets/images/desktop/sugarcubes.jpg);
+    }
+}
+
 
 .footer{
     width: 375px;
@@ -277,15 +510,30 @@ margin-bottom: 0px;
  padding-bottom: 86px;
 }
 
+@media screen and (width>786px) {
+    .footer{
+        width: 100%;
+        padding-top: 72px;
+    }
+}
+
 .footermenu{
     display: flex;
     justify-content: space-between;
     text-align: center;
 }
 
+@media screen and (width>786px) {
+    .footermenu{
+        margin-inline: auto;
+        width: 300px;
+    }
+}
+
 .footerlogo{
     margin-inline: auto;
 }
+
 .footertext{
     font-family: 'Barlow';
     font-weight: 600;
