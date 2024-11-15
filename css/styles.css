@@ -88,6 +88,7 @@ body{
         background-color: transparent;
         top: 34px;
         right: 48px;
+        translate: 0;
     }
 }
 
