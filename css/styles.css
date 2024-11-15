@@ -51,7 +51,7 @@ body{
         height: 800px;
         padding-top: 34px;
         padding-inline: 48px;
-        background-color: #458D7E;
+        
     }
 }
 
@@ -65,6 +65,10 @@ body{
 .burgericon{
     display: none;
 }
+}
+
+.hide{
+    display: none;
 }
 
 .nav{
@@ -167,9 +171,7 @@ font-size: 15px;
        }
 }
 
-.hide{
-    display: none;
-}
+
 
 .main{
     width: 375px;
